@@ -41,9 +41,15 @@ public class Lab {
      */
     public String returnNumbers(int start, int end){
         String buildingString = "";
+        StringBuilder sb= new StringBuilder();
 
+        for(int i=start;i<end;i++){
+            sb.append(String.valueOf(i));
+            sb.append(" ");
+        }
+        
 //        code here
-
+        buildingString=sb.toString();
         return buildingString;
     }
 }
